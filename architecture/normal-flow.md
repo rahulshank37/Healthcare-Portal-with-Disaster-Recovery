@@ -52,3 +52,26 @@
 This workflow represents the **baseline operational state** of the system.
 Any deviation from this state triggers investigation or disaster recovery
 procedures.
+
+┌──────────────┐
+│    User      │
+│ (Browser)    │
+└──────┬───────┘
+       │ HTTPS (443)
+       ▼
+┌──────────────────────────┐
+│ Azure Application Gateway│
+│ WAF v2 (Prevention Mode) │
+│ - OWASP inspection       │
+│ - HTTPS listener         │
+└──────┬───────────────────┘
+       │ Health probe: /health
+       │ HTTPS → 443
+       ▼
+┌──────────────────────────┐
+│ Azure App Service        │
+│ Linux + Node.js (Express)│
+│ - Serves index.html      │
+│ - /health → 200 OK       │
+└──────────────────────────┘
+
