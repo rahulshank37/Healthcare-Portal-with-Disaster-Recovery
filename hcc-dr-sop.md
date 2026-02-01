@@ -1551,6 +1551,5 @@ Allowed downtime per month: 1.6 hours
 - Version 1.0 - January 30, 2026 - Initial SOP with DR
 - Review Schedule: Quarterly
 - Next Review: April 30, 2026
-- Document Approver: [Name, Title]
 
 **END OF SOP**
