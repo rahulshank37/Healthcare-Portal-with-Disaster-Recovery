@@ -4,7 +4,7 @@
 
 ---
 
-### 5. Azure App Service (Backend)
+### 1. Azure App Service (Backend)
 - The backend is hosted on **Azure App Service (Linux)**.
 - The application runs on **Node.js (Express)**.
 - Responsibilities of the backend:
@@ -14,7 +14,7 @@
 
 ---
 
-### 6. Response to Client
+### 2. Response to Client
 - The backend response is returned to Application Gateway.
 - Application Gateway forwards the response back to the client over HTTPS.
 
