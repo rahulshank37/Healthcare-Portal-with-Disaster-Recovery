@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare-Portal-with-Disaster-Recovery</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 90%;
+            padding: 50px;
+            text-align: center;
+        }
+        .logo { font-size: 60px; margin-bottom: 20px; }
+        h1 { color: #667eea; font-size: 42px; margin-bottom: 10px; font-weight: 700; }
+        .subtitle { color: #666; font-size: 18px; margin-bottom: 40px; }
+        .status {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 30px 0;
+            font-weight: 600;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature {
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .feature:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .feature-icon { font-size: 48px; margin-bottom: 15px; }
+        .feature-title { font-size: 18px; font-weight: 600; color: #667eea; margin-bottom: 10px; }
+        .feature-desc { font-size: 14px; color: #666; }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .info-label { font-size: 12px; color: #666; text-transform: uppercase; font-weight: 600; margin-bottom: 5px; }
+        .info-value { font-size: 16px; color: #333; font-weight: 500; }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 5px;
+        }
+        .footer { margin-top: 40px; padding-top: 30px; border-top: 2px solid #eee; color: #999; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏥</div>
+        <h1>Healthcare Call Center Portal</h1>
+        <p class="subtitle">Enterprise-Grade HIPAA-Compliant Infrastructure</p>
+        
+        <div class="status">✓ System Operational - Multi-Region Architecture Active</div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-title">WAF Protected</div>
+                <div class="feature-desc">OWASP 3.2 Security Rules</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <div class="feature-title">Multi-Region</div>
+                <div class="feature-desc">East US 2 / West US 2</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-title">Auto-Scaling</div>
+                <div class="feature-desc">2-20 Instances</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-title">HIPAA Compliant</div>
+                <div class="feature-desc">Enterprise Security</div>
+            </div>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Application Gateway</div>
+                <div class="info-value">agw-hcc-prod-eus2</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Web App Region</div>
+                <div class="info-value">West US 2</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Backend Status</div>
+                <div class="info-value">✅ Healthy</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Public IP</div>
+                <div class="info-value">20.75.107.74</div>
+            </div>
+        </div>
+        
+        <div>
+            <span class="badge">Azure Application Gateway</span>
+            <span class="badge">WAF v2</span>
+            <span class="badge">Node.js Runtime</span>
+            <span class="badge">Standard S2</span>
+            <span class="badge">Zone Redundant</span>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Healthcare Call Center with Disaster Recovery</strong></p>
+            <p>Deployed on Microsoft Azure | Project Code: HCC-DR-001</p>
+            <p>Architecture: Cross-Region (EUS2 → WUS2) | HIPAA Compliant Infrastructure</p>
+        </div>
+    </div>
+</body>
+</html>
